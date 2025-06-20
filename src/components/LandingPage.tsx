@@ -11,8 +11,8 @@ export function LandingPage({ onSignIn, onSignUp }: LandingPageProps) {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 w-full flex justify-between items-center py-6 px-8 bg-[#fffaf0] shadow-sm">
       <a href="/">
-  <img src="/1.png" alt="CollaboraX logo" className="h-15 w-auto" />
-</a>
+      <img src="/1.png" alt="CollaboraX logo" style={{ height: "60px" }} className="w-auto" />
+      </a>
         <div className="flex gap-4 text-sm">
           <button 
             onClick={onSignIn}
@@ -48,62 +48,70 @@ export function LandingPage({ onSignIn, onSignUp }: LandingPageProps) {
         </div>
       </section>
 
-      {/* Benefits Card */}
-      <section className="w-full px-6 py-16 flex justify-center">
-        <div className="bg-[#ffa731] text-[#2d2d2d] px-14 py-12 rounded-[40px] max-w-3xl w-full animate-fadeUp">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-xl font-bold mb-4">For Companies</h3>
-              <ul className="space-y-3 list-disc list-inside text-sm">
-                <li className="transition-colors duration-300 hover:text-white">
-                  <strong>Enhances Innovation:</strong> Fresh perspectives spark ideas and solutions.
-                </li>
-                <li className="transition-colors duration-300 hover:text-white">
-                  <strong>Boosts Diversity:</strong> Encourages multicultural collaboration.
-                </li>
-                <li className="transition-colors duration-300 hover:text-white">
-                  <strong>Builds Global Networks:</strong> Strengthens cross-border ties.
-                </li>
-                <li className="transition-colors duration-300 hover:text-white">
-                  <strong>Develops Talent:</strong> Expands internal experience and skills.
-                </li>
-                <li className="transition-colors duration-300 hover:text-white">
-                  <strong>Promotes Employer Brand:</strong> Highlights growth initiatives.
-                </li>
-                <li className="transition-colors duration-300 hover:text-white">
-                  <strong>Increases Retention:</strong> Employees value development and stay.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">For Employees</h3>
-              <ul className="space-y-3 list-disc list-inside text-sm">
-                <li className="transition-colors duration-300 hover:text-white">
-                  <strong>Adventure & Experience:</strong> Work abroad temporarily—your position is held.
-                </li>
-                <li className="transition-colors duration-300 hover:text-white">
-                  <strong>Personal Growth:</strong> Build confidence and independence.
-                </li>
-                <li className="transition-colors duration-300 hover:text-white">
-                  <strong>Cultural Enrichment:</strong> Broaden perspectives through immersive experiences.
-                </li>
-                <li className="transition-colors duration-300 hover:text-white">
-                  <strong>Career Development:</strong> Gain new skills, languages, and best practices.
-                </li>
-                <li className="transition-colors duration-300 hover:text-white">
-                  <strong>Networking:</strong> Create global professional relationships.
-                </li>
-                <li className="transition-colors duration-300 hover:text-white">
-                  <strong>Fulfillment:</strong> Cross-cultural work is inspiring and meaningful.
-                </li>
-              </ul>
-            </div>
+{/* orange box */}
+      <section className="w-full px-6 py-20 flex justify-center">
+  <div className="bg-[#ffa731] px-6 py-8 rounded-[50px] w-full max-w-4xl animate-fadeUp flex justify-center">
+    <img
+      src="/3.png"
+      alt="Benefits Illustration"
+      className="w-full max-w-3xl h-auto rounded-[30px]"
+    />
+  </div>
+</section>
+
+
+
+      {/* Mission Statement */}
+      <section className="w-full px-6 pb-24">
+        <div className="max-w-3xl mx-auto text-sm text-[#333] leading-relaxed animate-fadeIn text-justify">
+          <p className="mb-4">
+            Collabora X is designed to become the leading platform for international temporary job swaps within the European Union, breaking down geographical barriers to professional development and cultural exchange.
+          </p>
+          <p className="mb-4">
+            By bringing together diverse perspectives and experiences, Colabora x sparks innovation and adaptability through meaningful collaboration.
+          </p>
+          <p className="mb-4">
+            Employees temporarily swap roles across countries, bringing their knowledge into new contexts while gaining fresh skills, expanding their networks, travelling around, and enriching their careers, all while continuing to work.
+          </p>
+          <p>
+            For companies, this dynamic exchange cultivates a more agile, globally connected, and forward-thinking workforce. Our goal is to empower people and organizations alike through a secure, efficient, and mutually beneficial system built for the future of work.
+          </p>
+        </div>
+        <div className="w-full bg-[#ffa731] py-6 flex justify-center items-center my-20">
+  <p className="text-2xl md:text-3xl font-extrabold text-[#1f1f1f] text-center max-w-4xl px-4">
+    “Diversity is the engine of innovation.”
+  </p>
+</div>
+        <hr className="border-t border-[#999] w-full max-w-md mx-auto" />
+      </section>
+
+      {/* How It Works */}
+      <section className="w-full px-6 pb-24 text-center">
+        <h2 className="text-3xl font-extrabold mb-12">how it works?</h2>
+        <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch max-w-5xl mx-auto">
+          <div className="bg-[#ffa731] text-[#2d2d2d] p-6 rounded-[50px] flex-1 text-justify">
+            <h3 className="font-bold text-lg mb-2 text-center text-[#2d2d2d]">DISCOVER & PROPOSE</h3>
+            <p className="text-sm">
+              Employees and companies sign up! Employees browse exciting temporary job opportunities in desired international locations. Find a match and propose a swap with another employee. Companies approve employees.
+            </p>
+          </div>
+          <div className="bg-[#ffa731] text-[#2d2d2d] p-6 rounded-[50px] flex-1 text-justify">
+            <h3 className="font-bold text-lg mb-2 text-center text-[#2d2d2d]">MATCH & AGREE</h3>
+            <p className="text-sm">
+              If both employees agree to the mutual swap, their respective companies review the temporary exchange for final approval.
+            </p>
+          </div>
+          <div className="bg-[#ffa731] text-[#2d2d2d] p-6 rounded-[50px] flex-1 text-justify">
+            <h3 className="font-bold text-lg mb-2 text-center text-[#2d2d2d]">SWAP & EXPERIENCE</h3>
+            <p className="text-sm">
+              Once approved by both companies, employees connect directly to coordinate their international swap and begin their enriching global experience.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Legal Framework Section */}
-      <section className="w-full px-6 py-16 bg-[#f8f8f8]">
+        {/* Legal Framework Section */}
+        <section className="w-full px-6 py-16 bg-[#f8f8f8]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-[#1f1f1f] mb-4">Legally Protected & EU Compliant</h2>
@@ -168,64 +176,14 @@ export function LandingPage({ onSignIn, onSignUp }: LandingPageProps) {
         </div>
       </section>
 
-      {/* Mission Statement */}
-      <section className="w-full px-6 pb-24">
-        <div className="max-w-3xl mx-auto text-sm text-[#333] leading-relaxed animate-fadeIn text-justify">
-          <p className="mb-4">
-            Collabora X is designed to become the leading platform for international temporary job swaps within the European Union, breaking down geographical barriers to professional development and cultural exchange.
-          </p>
-          <p className="mb-4">
-            By bringing together diverse perspectives and experiences, JobSwap sparks innovation and adaptability through meaningful collaboration.
-          </p>
-          <p className="mb-4">
-            Employees temporarily swap roles across countries, bringing their knowledge into new contexts while gaining fresh skills, expanding their networks, travelling around, and enriching their careers, all while continuing to work.
-          </p>
-          <p>
-            For companies, this dynamic exchange cultivates a more agile, globally connected, and forward-thinking workforce. Our goal is to empower people and organizations alike through a secure, efficient, and mutually beneficial system built for the future of work.
-          </p>
-        </div>
-        <div className="text-center text-3xl font-extrabold text-[#1f1f1f] my-20 relative">
-          <span className="text-5xl absolute left-[-1.5rem] top-[-1rem]"></span>
-          "Diversity is the engine of Innovation"
-          <span className="text-5xl absolute right-[-1.5rem] bottom-[-1rem]"></span>
-        </div>
-        <hr className="border-t border-[#999] w-full max-w-md mx-auto" />
-      </section>
-
-      {/* How It Works */}
-      <section className="w-full px-6 pb-24 text-center">
-        <h2 className="text-3xl font-extrabold mb-12">how it works?</h2>
-        <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch max-w-5xl mx-auto">
-          <div className="bg-[#ffa731] text-[#2d2d2d] p-6 rounded-[50px] flex-1 text-justify">
-            <h3 className="font-bold text-lg mb-2 text-center text-[#2d2d2d]">DISCOVER & PROPOSE</h3>
-            <p className="text-sm">
-              Employees and companies sign up! Employees browse exciting temporary job opportunities in desired international locations. Find a match and propose a swap with another employee. Companies approve employees.
-            </p>
-          </div>
-          <div className="bg-[#ffa731] text-[#2d2d2d] p-6 rounded-[50px] flex-1 text-justify">
-            <h3 className="font-bold text-lg mb-2 text-center text-[#2d2d2d]">MATCH & AGREE</h3>
-            <p className="text-sm">
-              If both employees agree to the mutual swap, their respective companies review the temporary exchange for final approval.
-            </p>
-          </div>
-          <div className="bg-[#ffa731] text-[#2d2d2d] p-6 rounded-[50px] flex-1 text-justify">
-            <h3 className="font-bold text-lg mb-2 text-center text-[#2d2d2d]">SWAP & EXPERIENCE</h3>
-            <p className="text-sm">
-              Once approved by both companies, employees connect directly to coordinate their international swap and begin their enriching global experience.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
-      <footer className="bg-[#2d2d2d] text-white py-8 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="text-xl font-bold mb-2">ColaboraX</div>
-          <p className="text-sm text-gray-300">
-            Empowering global professional exchange • Built for the future of work
-          </p>
-        </div>
-      </footer>
+      <footer className="bg-[#1f1f1f] text-white px-8 py-6">
+  <div className="flex flex-col items-center justify-center text-center space-y-2">
+  <img src="/2.png" alt="CollaboraX logob" style={{ height: "60px" }} className="w-auto" />
+  <p className="text-sm">Empowering global professional exchange • Built for the future of work</p>
+  </div>
+</footer>
+
 
       {/* Animations */}
       <style>{`
