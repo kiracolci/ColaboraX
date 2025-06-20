@@ -11,7 +11,7 @@ export function LandingPage({ onSignIn, onSignUp }: LandingPageProps) {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 w-full flex justify-between items-center py-6 px-8 bg-[#fffaf0] shadow-sm">
       <a href="/">
-  <img src="/1.png" alt="CollaboraX logo" className="h-10 w-auto" />
+  <img src="/1.png" alt="CollaboraX logo" className="h-15 w-auto" />
 </a>
         <div className="flex gap-4 text-sm">
           <button 
