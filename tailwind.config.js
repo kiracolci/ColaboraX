@@ -35,6 +35,9 @@ module.exports = {
         "form-field": "16px",
         section: "32px",
       },
+      animation: {
+        'spin-slow': 'spin 8s linear infinite',
+      },
     },
   },
   variants: {

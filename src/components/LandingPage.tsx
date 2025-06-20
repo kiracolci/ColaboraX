@@ -38,7 +38,7 @@ export function LandingPage({ onSignIn, onSignUp }: LandingPageProps) {
         </div>
         <div className="md:w-1/2 max-w-md">
           <p className="text-[#1f1f1f] text-sm mb-10 text-justify">
-          Colabora X drives change by connecting professionals across Europe to exchange jobs, share knowledge, and drive innovation through a temporary job exchange, leading to innovation through collaborative problem-solving. This diversity challenges assumptions, inspires creativity, and introduces new methods, creating more adaptive and forward-thinking workplaces that are better equipped to meet the challenges of the future workforce.          </p>
+          Colabora X connects professionals across Europe for temporary job exchanges, allowing them to swap roles, share knowledge, and gain international experience. By fostering collaboration across cultures and sectors, Colabora X drives innovation, challenges assumptions, and inspires creative solutions, building more adaptable and future-ready workplaces.          </p>
           <button 
             onClick={onSignUp}
             className="bg-[#ffa731] text-[#2d2d2d] font-semibold text-sm px-6 py-3 rounded-full hover:bg-[#ea580c] flex items-center gap-2 transition-transform duration-300 hover:scale-105"
@@ -77,11 +77,32 @@ export function LandingPage({ onSignIn, onSignUp }: LandingPageProps) {
             For companies, this dynamic exchange cultivates a more agile, globally connected, and forward-thinking workforce. Our goal is to empower people and organizations alike through a secure, efficient, and mutually beneficial system built for the future of work.
           </p>
         </div>
-        <div className="w-full bg-[#ffa731] py-6 flex justify-center items-center my-20">
-  <p className="text-2xl md:text-3xl font-extrabold text-[#1f1f1f] text-center max-w-4xl px-4">
-    “Diversity is the engine of innovation.”
+        <div className="w-full py-10 flex justify-center items-center gap-6 my-20">
+  {/* Left gear */}
+  <img
+    src="/4.png"
+    alt="Left gear"
+    className="w-10 h-10 md:w-14 md:h-14 animate-spin-slow"
+  />
+
+  {/* Quote */}
+  <p className="text-xl md:text-3xl font-extrabold text-[#1f1f1f] text-center">
+    “Diversity is the engine of{' '}
+    <span className="transition-colors duration-300 hover:text-[#ffa731] cursor-">
+      innovation
+    </span>
+    .”
   </p>
+
+  {/* Right gear */}
+  <img
+    src="/4.png"
+    alt="Right gear"
+    className="w-10 h-10 md:w-14 md:h-14 animate-spin-slow"
+  />
 </div>
+
+
         <hr className="border-t border-[#999] w-full max-w-md mx-auto" />
       </section>
 
