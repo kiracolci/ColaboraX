@@ -10,7 +10,9 @@ export function LandingPage({ onSignIn, onSignUp }: LandingPageProps) {
     <div className="min-h-screen bg-[#fefdfb] text-[#1f1f1f] font-sans">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 w-full flex justify-between items-center py-6 px-8 bg-[#fffaf0] shadow-sm">
-        <div className="text-3xl font-extrabold tracking-tight">CollaboraX</div>
+      <a href="/">
+  <img src="/1.png" alt="CollaboraX logo" className="h-10 w-auto" />
+</a>
         <div className="flex gap-4 text-sm">
           <button 
             onClick={onSignIn}
@@ -218,7 +220,7 @@ export function LandingPage({ onSignIn, onSignUp }: LandingPageProps) {
       {/* Footer */}
       <footer className="bg-[#2d2d2d] text-white py-8 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="text-xl font-bold mb-2">CollaboraX</div>
+          <div className="text-xl font-bold mb-2">ColaboraX</div>
           <p className="text-sm text-gray-300">
             Empowering global professional exchange • Built for the future of work
           </p>
